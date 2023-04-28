@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>A-Zタイピング</title>
+</head>
+<body>
+  <main style="width: 100%; height: 100%;">
+    <!--初期画面-->
+    <div id="start_display" class="start_display">
+      <div>
+        <h1>A-Zタイピング</h1>
+        <div>
+          <button id="start_button" class="btn btn-primary" style="width: 100%;">START</button>
+        </div>
+      </div>
+    </div>
+    <!--プレイ画面-->
+    <div id="play_display" style="display: none; height: 100%;">
+      <div class="play_main_screen">
+        <h1 style="font-weight: bold; font-size: 4rem;" id="word_feild">A</h1>
+      </div>
+    </div>
+    <!--終了画面-->
+    <div id="end_display" class="end_display" style="display: none;">
+      <div>
+        <h1>結果</h1>
+        <div>
+          <button id="return_button" class="btn btn-primary" style="width: 100%;">スタートに戻る</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <style>
+    html,body{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .start_display{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .end_display{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .play_main_screen{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <script src="./main.js"></script>
+</body>
+</html>
